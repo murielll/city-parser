@@ -5,7 +5,7 @@ city-parser
 Python 2.x
 
 
-###__Description__
+###__Description__:
 
 Script parse list of city of certain country from wiki or from other site.
 
