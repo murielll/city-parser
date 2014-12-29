@@ -1,12 +1,12 @@
 city-parser
 ===========
-------------------------
-Requirements: Python 2.x
-------------------------
 
-------------------------
-Description
-------------------------
+###__Requirements__: 
+Python 2.x
+
+
+###__Description__
+
 Script parse list of city of certain country from wiki or from other site.
 
 County is the dict object with keys country_code, page, xpath.
