@@ -1,4 +1,9 @@
 # -*- coding: utf-8 -*-
+'''
+This script parse cities from specified url
+and save data in a csv-file named XX.csv
+where XX is ISO code of country.
+'''
 from lxml import html
 import requests
 import codecs
@@ -17,9 +22,10 @@ def city_parse(country_code='', page='', xpath=''):
             city = city.split("(")[0].strip()
         cities.append(city.strip())
 
-    with codecs.open(country_code + '.txt', 'w', encoding='utf-8') as output:
+    with codecs.open(country_code + '.csv', 'w', encoding='utf-8') as output:
+        output.write('title,country\n')
         for city in cities:
-            city = u"%s\n" % city
+            city = u"%s,%s\n" % (city, country_code)
             output.write(city)
 
     print"Parse %s OK!" % country_code
