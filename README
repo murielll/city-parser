@@ -1,0 +1,9 @@
+1. Parsing cities for country:
+  - add country and her properties in dictonary COUNTRIES
+  - run script city_parser.py with python 2.x
+
+2. Load data in DB:
+  - copy load_mysql.py script and csv file cities.csv in directory with manage.py
+  - go in directory with manage.py
+  - export enviroment variable with settings module (export DJANGO_SETTINGS_MODULE=settings)
+  - run load_mysql.py script with python 2.x.
